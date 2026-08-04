@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoPark Konya - Teknoloji Geliştirme Bölgesi</title>
+    <meta name="author" content="Aleyna Kardelen AKIN">
+    <meta name="description" content="Konya Sanayi Odası liderliğinde kurulan InnoPark Teknoloji Geliştirme Bölgesi, girişimcilere, akademisyenlere ve Ar-Ge firmalarına modern ofisler, vergi muafiyetleri ve TTO desteği sunan bir inovasyon merkezidir.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#hero" class="logo-link">
+                <img src="resimler/logo.png" alt="InnoPark Konya Logo" class="theme-logo" style="height: 50px; width: auto;">
+            </a>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-item active">Ana Sayfa</a></li>
+                    <li><a href="#stats" class="nav-item">Sayılarla Biz</a></li>
+                    <li><a href="#brands" class="nav-item">Markalarımız</a></li>
+                    <li><a href="#team" class="nav-item">Ekibimiz</a></li>
+                    <li><a href="#firms" class="nav-item">Firmalar</a></li>
+                    <li><a href="#wizard" class="nav-item">Hızlı Başvuru</a></li>
+                    <li><a href="#news" class="nav-item">Duyurular</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button id="theme-toggle" class="btn-icon" aria-label="Tema Değiştir" title="Açık/Koyu Tema" type="button">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#wizard" class="btn-primary">Başvuru Yap</a>
+            </div>
+            <button class="mobile-nav-toggle" aria-label="Menüyü Aç" type="button">
+                <i data-lucide="menu" class="menu-icon"></i>
+                <i data-lucide="x" class="close-icon hidden"></i>
+            </button>
+        </div>
+    </header>
+    
+    <div class="mobile-nav-overlay hidden">
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#hero" class="mobile-nav-item">Ana Sayfa</a></li>
+                <li><a href="#stats" class="mobile-nav-item">Sayılarla Biz</a></li>
+                <li><a href="#brands" class="mobile-nav-item">Markalarımız</a></li>
+                <li><a href="#team" class="mobile-nav-item">Ekibimiz</a></li>
+                <li><a href="#firms" class="mobile-nav-item">Firmalar</a></li>
+                <li><a href="#wizard" class="mobile-nav-item">Hızlı Başvuru</a></li>
+                <li><a href="#news" class="mobile-nav-item">Duyurular</a></li>
+                <li><a href="#wizard" class="btn-primary mobile-btn">Başvuru Yap</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-container grid-2 align-center">
+                <div class="hero-content">
+                    <div class="badge-tech"><i data-lucide="cpu" class="badge-icon"></i> KONYA TEKNOLOJİ GELİŞTİRME BÖLGESİ</div>
+                    <h1 class="hero-title">Geleceğin Teknolojileri <br><span class="text-highlight">Burada Şekilleniyor</span></h1>
+                    <p class="hero-subtitle">Sanayi ile üniversiteleri, fikirler ile yatırımları buluşturan InnoPark ekosistemine katılın. Ar-Ge ve inovasyon projeleriniz için en uygun çalışma alanları ve devlet teşvikleri burada.</p>
+                    <div class="hero-buttons">
+                        <a href="#wizard" class="btn-primary btn-lg">Hemen Başvur <i data-lucide="arrow-right" class="btn-arrow"></i></a>
+                        <a href="#brands" class="btn-secondary btn-lg">Ekosistemi Keşfet</a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-image-wrapper">
+                        <div class="hero-fallback-bg">
+                            <i data-lucide="building-2" class="fallback-icon"></i>
+                            <span>InnoPark Teknoloji Geliştirme Bölgesi Kampüsü</span>
+                        </div>
+                        <img src="innopark.webp" alt="InnoPark Teknoloji Geliştirme Bölgesi Binası" class="hero-img" onerror="this.style.display='none';">
+                        <div class="integrated-badge badge-top">
+                            <div class="i-icon green-accent"><i data-lucide="zap"></i></div>
+                            <div class="i-text">
+                                <h4>%100</h4>
+                                <p>Vergi Muafiyeti</p>
+                            </div>
+                        </div>
+                        <div class="integrated-badge badge-bottom">
+                            <div class="i-icon blue-accent"><i data-lucide="users"></i></div>
+                            <div class="i-text">
+                                <h4>150+</h4>
+                                <p>Aktif Ar-Ge Firması</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container grid-2 align-center">
+                <div class="about-text-content">
+                    <span class="badge-tech"><i data-lucide="info" class="badge-icon"></i> BİZ KİMİZ?</span>
+                    <h2 class="section-title">Hakkımızda</h2>
+                    <p>Mevlana Kalkınma Ajansı tarafından desteklenen, Konya Sanayi Odası liderliğinde uygulamaya konulan bir güdümlü proje ile kurulan "Konya Bölgesel İnovasyon Merkezi", hizmetlerde etkinlik sağlama ve sürdürülebilirlik kaygılarıyla 2015 yılında Konya Teknoloji Geliştirme Bölgesine dönüştürülmüştür.</p>
+                    <p>Konya Teknoloji Geliştirme Bölgesi, 4691 Sayılı kanun kapsamında 24 Haziran 2015 tarihli Resmi Gazetede yayımlanan Bakanlar Kurulu kararı ile kurulmuştur. Bölgenin yönetimi, <strong>InnoPark Konya Teknoloji Geliştirme Bölgesi Yönetici A.Ş.</strong> tarafından yürütülmektedir.</p>
+                    <p>InnoPark; OSB içinde konumlanmış, 7 üniversitenin ortağı olduğu, yönetiminde özel sektörün ağırlığı olan, teknolojik üretim odaklı bir teknopark olma özellikleri ile öne çıkan özgün bir yapıya sahiptir.</p>
+                </div>
+                <div class="about-video-content">
+                    <div class="about-video-content">
+                        <a href="https://www.youtube.com/watch?v=nGDsmTOjn78" target="_blank" class="video-card" style="display: block;">
+                            <img src="https://img.youtube.com/vi/nGDsmTOjn78/maxresdefault.jpg" alt="InnoPark Tanıtım Videosu">
+                            <div class="video-overlay">
+                                <span class="play-btn"><i data-lucide="play"></i></span>
+                                <span class="video-title">InnoPark Tanıtım Videosu</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stats" class="stats-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Sayılarla <span class="text-highlight">InnoPark</span></h2>
+                    <p class="section-desc">InnoPark Teknoloji Geliştirme Bölgesi, tamamlanan ve halen yürütülen projelerle Ar-Ge, inovasyon ve girişimcilik alanlarındaki ekosistemini genişletmeye devam etmektedir.</p>
+                </div>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-number green" data-target="117">0</div>
+                        <span class="stat-label">Devam Eden Proje Sayısı</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number blue" data-target="333">0</div>
+                        <span class="stat-label">Tamamlanan Proje Sayısı</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number green" data-target="35">0</div>
+                        <span class="stat-label">Uluslararası Patent</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number blue" data-target="152">0</div>
+                        <span class="stat-label">Toplam Patent</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <div class="stat-number green" data-target="367">0</div>
+                        <span class="stat-label">Ürün Çıktısı</span>
+                    </div>
+                </div>
+                <div class="sector-distribution-wrapper margin-top-md">
+                    <h3 class="sector-title text-center">Sektörel Dağılım</h3>
+                    <div class="sector-bars-container">
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Elektronik Otomasyon</span><span>26%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 26%; background-color: #f43f5e;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Bilişim</span><span>25%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 25%; background-color: #0ea5e9;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Makine</span><span>18%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 18%; background-color: #f97316;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Enerji</span><span>9%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 9%; background-color: #10b981;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Diğer</span><span>9%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 9%; background-color: #eab308;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Biyoteknoloji</span><span>7%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 7%; background-color: #22c55e;"></div></div></div>
+                        <div class="s-bar-item"><div class="s-bar-info"><span>Kimya</span><span>6%</span></div><div class="s-bar-track"><div class="s-bar-fill" style="width: 6%; background-color: #d946ef;"></div></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="brands" class="brands-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">InnoPark <span class="text-highlight">Markaları & Destekler</span></h2>
+                    <p class="section-desc">Fikir aşamasından küresel ticarileşmeye kadar, girişiminizin ve firmanızın her aşamasında yanınızdayız.</p>
+                </div>
+                <div class="brands-tabs">
+                    <button class="tab-btn active" data-tab="kulucka" type="button"><i data-lucide="rocket"></i> Girişimcilik & Kuluçka</button>
+                    <button class="tab-btn" data-tab="tto" type="button"><i data-lucide="share-2"></i> Teknoloji Transfer (TTO)</button>
+                    <button class="tab-btn" data-tab="tasarim" type="button"><i data-lucide="layout"></i> Tasarım & Prototip</button>
+                    <button class="tab-btn" data-tab="ofis" type="button"><i data-lucide="map-pin"></i> Altyapı & Ofis</button>
+                </div>
+                <div class="tab-content-container">
+                    <div class="tab-content active" id="tab-kulucka">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3 class="tab-content-title">Girişimci Kampı & Girişimci Rampası</h3>
+                                <p class="tab-content-desc">Teknoloji odaklı ve yenilikçi iş fikirlerinizi olgunlaştırmak, ticarileştirmek ve büyütmek için uçtan uca destek programlarımızdır.</p>
+                                <ul class="tab-feature-list">
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Girişimci Kampı:</strong> Fikir aşamasındaki girişimciler için hızlandırılmış eğitim, iş planı geliştirme ve mentorluk.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Girişimci Rampası:</strong> Ürünü hazır olan veya satışa başlamış girişimciler için yatırımcı buluşmaları ve ticarileşme desteği.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>InnoGirişim:</strong> TÜBİTAK BİGG (1512) kapsamında girişimcilik hibelerine hazırlık ve eğitim süreçleri.</li>
+                                </ul>
+                                <a href="#wizard" class="btn-primary margin-top-md">Kuluçkaya Başvur</a>
+                            </div>
+                            <div class="tab-visual">
+                                <div class="solid-info-box">
+                                    <div class="box-header">
+                                        <i data-lucide="award" class="box-icon green"></i>
+                                        <h4>Girişimci Avantajları</h4>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="benefit-row"><strong>Ücretsiz Ortak Çalışma Alanı</strong><span>InnoGarage ortak kullanım alanına 7/24 erişim hakkı.</span></div>
+                                        <div class="benefit-row"><strong>Birebir Mentorluk</strong><span>Sektör profesyonelleri ve akademisyenlerden stratejik rehberlik.</span></div>
+                                        <div class="benefit-row"><strong>Yatırım Ağına Katılım</strong><span>Melek yatırımcı ağları ve risk sermayesi fonlarına doğrudan sunum imkanı.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="tab-tto">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3 class="tab-content-title">Teknoloji Transfer Ofisi (TTO)</h3>
+                                <p class="tab-content-desc">Akademik bilginin sanayiye aktarılması, fikri mülkiyet haklarının korunması ve Ar-Ge projelerinin fonlanması süreçlerini yönetiyoruz.</p>
+                                <ul class="tab-feature-list">
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Üniversite-Sanayi İş Birliği:</strong> Sanayinin ihtiyaç duyduğu Ar-Ge çözümlerinin akademisyenlerle eşleştirilmesi.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Fikri Sınai Mülkiyet Hakları:</strong> Patent, faydalı model başvuruları ve tescil süreçlerinin takibi.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Proje Destekleri:</strong> TÜBİTAK, KOSGEB ve AB projelerine başvuru ve danışmanlık hizmetleri.</li>
+                                </ul>
+                                <button class="btn-primary margin-top-md contact-btn-trigger" type="button">Uzmana Danışın</button>
+                            </div>
+                            <div class="tab-visual">
+                                <div class="solid-info-box">
+                                    <div class="box-header"><i data-lucide="shield-check" class="box-icon blue"></i><h4>TTO Başarı Performansı</h4></div>
+                                    <div class="box-body">
+                                        <div class="stat-progress">
+                                            <div class="progress-info"><span>Patent & Faydalı Model Başvuruları</span><strong>85+</strong></div>
+                                            <div class="progress-bar"><div class="progress-fill blue-fill" style="width: 85%;"></div></div>
+                                        </div>
+                                        <div class="stat-progress">
+                                            <div class="progress-info"><span>Desteklenen Ar-Ge Fon Hacmi</span><strong>320M+ TL</strong></div>
+                                            <div class="progress-bar"><div class="progress-fill green-fill" style="width: 90%;"></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="tab-content" id="tab-tasarim">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3 class="tab-content-title">Tasarım Merkezi & InnoGarage</h3>
+                                <p class="tab-content-desc">Donanım geliştiriciler ve tasarımcılar için Konya'nın en kapsamlı prototipleme ve üretim atölyesi.</p>
+                                <ul class="tab-feature-list">
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Hızlı Prototipleme:</strong> 3D yazıcılar, CNC routerlar ve elektronik geliştirme kitleri ile hızlı üretim.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Tasarım Desteği:</strong> Endüstriyel tasarım ve CAD modelleme uzmanlığı.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>InnoVersity FabLab:</strong> Maker ve teknoloji meraklıları için açık atölye imkanı.</li>
+                                </ul>
+                                <button class="btn-primary margin-top-md contact-btn-trigger" type="button">Atölyeyi Ziyaret Et</button>
+                            </div>
+                            <div class="tab-visual">
+                                <div class="solid-info-box">
+                                    <div class="box-header"><i data-lucide="wrench" class="box-icon green"></i><h4>Atölye Makine Envanteri</h4></div>
+                                    <div class="box-body">
+                                        <div class="tag-cloud">
+                                            <span class="tech-tag">FDM & SLA 3D Yazıcılar</span><span class="tech-tag">CNC Hassas Router</span>
+                                            <span class="tech-tag">Elektronik Lab & Gömülü Sistemler</span><span class="tech-tag">Lazer Kesim Ünitesi</span>
+                                            <span class="tech-tag">CAD/CAM Tasarım İstasyonları</span><span class="tech-tag">Hassas Ölçüm Cihazları</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-content" id="tab-ofis">
+                        <div class="tab-grid">
+                            <div class="tab-text">
+                                <h3 class="tab-content-title">InnoVadi & Modern Ofis Alanları</h3>
+                                <p class="tab-content-desc">Mikro girişimcilerden dev Ar-Ge merkezlerine kadar her büyüklükteki firma için prestijli ve donanımlı çalışma alanları sunuyoruz.</p>
+                                <ul class="tab-feature-list">
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Hazır ve Esnek Ofisler:</strong> Altyapısı hazır, mobilyalı ve genişletilebilir ofis seçenekleri.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Ortak Toplantı Salonları:</strong> Akıllı tahta, video konferans sistemli modern toplantı odaları.</li>
+                                    <li><i data-lucide="check-circle-2" class="check-icon"></i> <strong>Sosyal Alanlar:</strong> Yemyeşil bahçeler, kafeterya ve dinlenme alanları ile zengin sosyal ekosistem.</li>
+                                </ul>
+                                <a href="#wizard" class="btn-primary margin-top-md">Ofis Başvurusu Yap</a>
+                            </div>
+                            <div class="tab-visual">
+                                <div class="solid-info-box">
+                                    <div class="box-header"><i data-lucide="building" class="box-icon blue"></i><h4>Kampüs Altyapı Olanakları</h4></div>
+                                    <div class="box-body">
+                                        <div class="benefit-row"><strong>7/24 Kesintisiz Erişim</strong><span>Tam güvenlikli ve yedek enerji altyapılı çalışma ortamı.</span></div>
+                                        <div class="benefit-row"><strong>Simetrik Kurumsal Fiber</strong><span>Yüksek hızlı kurumsal veri bağlantısı ve sunucu odası desteği.</span></div>
+                                        <div class="benefit-row"><strong>Stratejik Konum</strong><span>Konya Organize Sanayi Bölgesi (KOS) girişinde merkezi lokasyon.</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="badge-tech"><i data-lucide="users-2" class="badge-icon"></i> YÖNETİM & PROFESYONEL KADRO</span>
+                    <h2 class="section-title">InnoPark <span class="text-highlight">Ekibimiz</span></h2>
+                    <p class="section-desc">Konya inovasyon ekosistemini yöneten, sanayi ve üniversite iş birliğine yön veren 21 kişilik profesyonel kadromuzla tanışın.</p>
+                </div>
+
+                <div class="team-grid">
+
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>MB</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/mustafa_buyukegen.jpg" alt="Mustafa BÜYÜKEGEN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Başkanı</span><h3 class="team-name">Mustafa BÜYÜKEGEN</h3><p class="team-title">Yönetim Kurulu Başkanı</p></div>
+                        <div class="team-actions"><a href="mailto:mbuyukegen@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+        
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>MÇ</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/mehmet_zahid_catli.png" alt="Mehmet Zahid ÇATLI" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Başkan Yrd.</span><h3 class="team-name">Mehmet Zahid ÇATLI</h3><p class="team-title">Yönetim Kurulu Başkan Yardımcısı</p></div>
+                        <div class="team-actions"><a href="mailto:mcatli@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>İÇ</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/ibrahim_bozkurt_caglayan.jpg" alt="İbrahim Bozkurt ÇAĞLAYAN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Başkan Yrd.</span><h3 class="team-name">İbrahim Bozkurt ÇAĞLAYAN</h3><p class="team-title">Yönetim Kurulu Başkan Yardımcısı</p></div>
+                        <div class="team-actions"><a href="mailto:icaglayan@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>CZ</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/cem_zorlu.jpg" alt="Cem ZORLU" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">Cem ZORLU</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:czorlu@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+ 
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>MU</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/mustafa_uzbas.jpg" alt="Mustafa UZBAŞ" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">Mustafa UZBAŞ</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:muzbas@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+             
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>KÖ</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/kemal_ozarpa.png" alt="Kemal ÖZARPA" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">Kemal ÖZARPA</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:kozarpa@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+         
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>BK</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/bahri_karapinar.jpg" alt="Bahri KARAPINAR" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">Bahri KARAPINAR</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:bkarapinar@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+           
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AK</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/ali_kocak.jpg" alt="Ali KOÇAK" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">Ali KOÇAK</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:akocak@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>İK</span><p>Yönetim Kurulu</p></div>
+                            <img src="resimler/ibrahim_koyuncu.jpg" alt="İbrahim KOYUNCU" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Yönetim Kurulu Üyesi</span><h3 class="team-name">İbrahim KOYUNCU</h3><p class="team-title">Yönetim Kurulu Üyesi</p></div>
+                        <div class="team-actions"><a href="mailto:ikoyuncu@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AK</span><p>Yönetim</p></div>
+                            <img src="resimler/ali_kahraman.png" alt="Prof.Dr. Ali KAHRAMAN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Genel Müdür</span><h3 class="team-name">Prof.Dr. Ali KAHRAMAN</h3><p class="team-title">Teknopark Genel Müdürü</p></div>
+                        <div class="team-actions"><a href="mailto:akahraman@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>YG</span><p>TTO Uzmanı</p></div>
+                            <img src="resimler/yasemin_metin_gulbahce.png" alt="Yasemin METİN GÜLBAHÇE" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">TTO & Projeler</span><h3 class="team-name">Yasemin METİN GÜLBAHÇE</h3><p class="team-title">Teknoloji Transfer Ofisi (TTO) Lideri</p></div>
+                        <div class="team-actions"><a href="mailto:ymetin@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>Aİ</span><p>İdari & Mali</p></div>
+                            <img src="resimler/ali_ihsan_ciger.png" alt="Ali İhsan CİĞER" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">İdari & Mali İşler</span><h3 class="team-name">Ali İhsan CİĞER</h3><p class="team-title">İdari ve Mali İşler Birim Yöneticisi</p></div>
+                        <div class="team-actions"><a href="mailto:aciger@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>EK</span><p>Kuluçka</p></div>
+                            <img src="resimler/ertan_kanik.png" alt="Ertan KANIK" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Girişimcilik & Kuluçka</span><h3 class="team-name">Ertan KANIK</h3><p class="team-title">Girişimcilik ve Kuluçka Merkezi Yöneticisi</p></div>
+                        <div class="team-actions"><a href="mailto:ekanik@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+               
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>YY</span><p>Kurumsal İletişim</p></div>
+                            <img src="resimler/yesim_yagmur_yaman_cengiz.png" alt="Yeşim Yağmur YAMAN CENGİZ" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Kurumsal İletişim</span><h3 class="team-name">Yeşim Yağmur YAMAN CENGİZ</h3><p class="team-title">Kurumsal İletişim ve Etkinlik Koordinatörü</p></div>
+                        <div class="team-actions"><a href="mailto:yyaman@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AA</span><p>Üniversite-Sanayi</p></div>
+                            <img src="resimler/aziz_hakan_altun.png" alt="Doç.Dr. Aziz Hakan ALTUN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Sanayi Koordinatörü</span><h3 class="team-name">Doç.Dr. Aziz Hakan ALTUN</h3><p class="team-title">Ar-Ge ve Üniversite-Sanayi İş Birliği Danışmanı</p></div>
+                        <div class="team-actions"><a href="mailto:aaltun@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>KD</span><p>Ön Kuluçka</p></div>
+                            <img src="resimler/kadir_dedemevi.jpg" alt="Kadir DEDEMEVİ" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Ön Kuluçka Lideri</span><h3 class="team-name">Kadir DEDEMEVİ</h3><p class="team-title">Girişimci Kampı, Hackathon ve İş Modeli Eğitmeni</p></div>
+                        <div class="team-actions"><a href="mailto:kdedemevi@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AA</span><p>İçerik & PR</p></div>
+                            <img src="resimler/ahmet_afsar.jpg" alt="Ahmet AFŞAR" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">İçerik & Medya</span><h3 class="team-name">Ahmet AFŞAR</h3><p class="team-title">Dijital Pazarlama, Sosyal Medya ve Bülten Sorumlusu</p></div>
+                        <div class="team-actions"><a href="mailto:aafsar@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AM</span><p>Kampüs İşletme</p></div>
+                            <img src="resimler/alparslan_misir.jpg" alt="Alparslan MISIR" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Kampüs Müdürü</span><h3 class="team-name">Alparslan MISIR</h3><p class="team-title">Ofis Tahsis, Kiralama ve Fiziki Alan Yönetim Sorumlusu</p></div>
+                        <div class="team-actions"><a href="mailto:amisir@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>AU</span><p>InnoGarage</p></div>
+                            <img src="resimler/avni_eren_uzuncorap.jpg" alt="Avni Eren UZUNÇORAP" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Atölye Sorumlusu</span><h3 class="team-name">Avni Eren UZUNÇORAP</h3><p class="team-title">3D Yazıcı, CNC Prototipleme ve FabLab Teknik Lideri</p></div>
+                        <div class="team-actions"><a href="mailto:auzuncorap@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>CÇ</span><p>Marka & Patent</p></div>
+                            <img src="resimler/ceylin_nur_celen.jpg" alt="Ceylin Nur ÇELEN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">Patent Vekili</span><h3 class="team-name">Ceylin Nur ÇELEN</h3><p class="team-title">TÜRKPATENT Tescil, Araştırma ve Lisanslama Uzmanı</p></div>
+                        <div class="team-actions"><a href="mailto:ccelen@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <div class="team-fallback-avatar"><span>YB</span><p>İletişim & HR</p></div>
+                            <img src="resimler/yusuf_cem_baran.jpg" alt="Yusuf Cem BARAN" class="team-img" onerror="this.style.display='none';">
+                        </div>
+                        <div class="team-info"><span class="team-role">İK & Kalite</span><h3 class="team-name">Yusuf Cem BARAN</h3><p class="team-title">İnsan Kaynakları, KVKK ve Kalite Yönetim Temsilcisi</p></div>
+                        <div class="team-actions"><a href="mailto:ybaran@innopark.com.tr" class="team-btn mail-btn"><i data-lucide="mail"></i> <span>Mail</span></a><a href="https://linkedin.com" target="_blank" class="team-btn linkedin-btn"><i data-lucide="linkedin"></i> <span>LinkedIn</span></a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="firms" class="firms-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Ekosistem <span class="text-highlight">Firmalarımız</span></h2>
+                    <p class="section-desc">InnoPark Konya bünyesinde faaliyet gösteren inovatif Ar-Ge ve yazılım şirketleri.</p>
+                </div>  
+                <div class="directory-filter-wrapper">
+                    <div class="search-box">
+                        <i data-lucide="search" class="search-icon"></i>
+                        <input type="text" id="firm-search-input" placeholder="Firma adı veya teknoloji alanı yazın...">
+                    </div>
+                    <div class="sector-filters" id="sector-filters-container">
+                        <button class="filter-btn active" data-sector="all" type="button">Tümü</button>
+                        <button class="filter-btn" data-sector="yazilim" type="button">Yazılım & Bilişim</button>
+                        <button class="filter-btn" data-sector="savunma" type="button">Savunma Sanayii</button>
+                        <button class="filter-btn" data-sector="biyoteknoloji" type="button">Biyoteknoloji</button>
+                        <button class="filter-btn" data-sector="enerji" type="button">Enerji & Çevre</button>
+                        <button class="filter-btn" data-sector="makine" type="button">Makine & İmalat</button>
+                    </div>
+                </div>
+
+                <div class="firms-grid" id="firms-grid-container">
+                    <div class="firm-card" data-sector="yazilim">
+                        <div class="firm-card-header"><span class="sector-tag yazilim">Yazılım & Bilişim</span><i data-lucide="code" class="firm-icon"></i></div>
+                        <h3 class="firm-name">İnnosoft Teknoloji</h3>
+                        <p class="firm-desc">Endüstri 4.0, yapay zeka tabanlı üretim verimliliği izleme sistemleri ve kurumsal veri analitiği çözümleri.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok A - Ofis 12</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="innosoft" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="firm-card" data-sector="savunma">
+                        <div class="firm-card-header"><span class="sector-tag savunma">Savunma Sanayii</span><i data-lucide="shield" class="firm-icon"></i></div>
+                        <h3 class="firm-name">MilKon Savunma</h3>
+                        <p class="firm-desc">Askeri ve sivil İHA/SİHA sistemleri için gömülü kontrol yazılımları ve hassas mekanik alt sistem geliştirme.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok C - Ofis 4</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="milkon" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="firm-card" data-sector="biyoteknoloji">
+                        <div class="firm-card-header"><span class="sector-tag biyoteknoloji">Biyoteknoloji</span><i data-lucide="dna" class="firm-icon"></i></div>
+                        <h3 class="firm-name">BioKon Sağlık</h3>
+                        <p class="firm-desc">Tarım ve gıda güvenliğine yönelik hızlı biyosensör test kitleri ve moleküler teşhis sistemleri tasarımı.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok B - Ofis 8</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="biokon" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="firm-card" data-sector="enerji">
+                        <div class="firm-card-header"><span class="sector-tag enerji">Enerji & Çevre</span><i data-lucide="leaf" class="firm-icon"></i></div>
+                        <h3 class="firm-name">AeroSol Enerji</h3>
+                        <p class="firm-desc">Fotovoltaik güneş panelleri için yüksek verimli şarj regülatörleri ve akıllı şebeke izleme istasyonları.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok A - Ofis 25</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="aerosol" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="firm-card" data-sector="makine">
+                        <div class="firm-card-header"><span class="sector-tag makine">Makine & İmalat</span><i data-lucide="settings" class="firm-icon"></i></div>
+                        <h3 class="firm-name">Optima Robotik</h3>
+                        <p class="firm-desc">Otomotiv ve metal sanayii için yüksek hassasiyetli kartezyen robotlar ve konveyör hat otomasyonu.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok D - Ofis 2</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="optima" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="firm-card" data-sector="yazilim">
+                        <div class="firm-card-header"><span class="sector-tag yazilim">Yazılım & Bilişim</span><i data-lucide="database" class="firm-icon"></i></div>
+                        <h3 class="firm-name">VeriAnaliz Bilişim</h3>
+                        <p class="firm-desc">Büyük veri analiz sistemleri, bulut tabanlı CRM altyapıları ve mikroservis mimarileri geliştirme hizmetleri.</p>
+                        <div class="firm-footer">
+                            <span class="firm-location"><i data-lucide="map-pin"></i> Blok B - Ofis 14</span>
+                            <button class="btn-text firm-modal-trigger" data-firm="verianaliz" type="button">Detaylar <i data-lucide="arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners" class="partners-section">
+            <div class="container text-center">
+                <h2 class="section-title">Çözüm Ortaklarımız</h2>
+                <p class="section-desc">Binlerce işletme InnoPark'ı tercih etti. Onlar işlerine bakarken, biz altyapımızı her gün geliştiriyoruz.</p>
+                
+                <div class="partners-grid margin-top-md" id="partners-grid-el">
+                    <div class="partner-card"><img src="resimler/ahiturk.jpg" alt="Ahitürk" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Ahitürk</span></div>
+                    <div class="partner-card"><img src="resimler/aselsan.jpg" alt="Aselsan Konya" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Aselsan Konya</span></div>
+                    <div class="partner-card"><img src="resimler/kgtü.jpg" alt="Konya Gıda Tarım" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Konya Gıda Tarım</span></div>
+                    <div class="partner-card"><img src="resimler/iasp.png" alt="IASP" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">IASP</span></div>
+                    <div class="partner-card"><img src="resimler/innox.jpg" alt="innoX" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">innoX</span></div>
+                    <div class="partner-card"><img src="resimler/kto.jpg" alt="KTO" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">KTO Karatay Üniversitesi</span></div>
+                    <div class="partner-card"><img src="resimler/kso.jpg" alt="Konya Sanayi Odası" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Konya Sanayi Odası</span></div>
+                    <div class="partner-card"><img src="resimler/ktün.jpg" alt="KTÜN" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Konya Teknik Üniversitesi</span></div>
+                    <div class="partner-card"><img src="resimler/neü.jpg" alt="NEÜ" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">NEÜ</span></div>
+                    <div class="partner-card"><img src="resimler/pmo.jpg" alt="PMO" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">PMO</span></div>
+        
+                    <div class="partner-card hidden-item"><img src="resimler/sü.jpg" alt="Selçuk Üniversitesi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Selçuk Üniversitesi</span></div>
+                    <div class="partner-card hidden-item"><img src="resimler/tgbd.jpg" alt="TGBD" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">TGBD</span></div>
+                    <div class="partner-card hidden-item"><img src="resimler/turkish_airlines.jpg" alt="Turkish Airlines" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Turkish Airlines</span></div>
+                    <div class="partner-card hidden-item"><img src="resimler/thus.jpg" alt="Türk Havacılık Uzay Sanayi" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Türk Havacılık Uzay Sanayi</span></div>
+                    <div class="partner-card hidden-item"><img src="resimler/yandex.jpg" alt="Yandex Cloud" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"><span class="fallback-text">Yandex Cloud</span></div>
+                </div>
+                <div class="margin-top-md" style="margin-top: 40px;">
+                    <button class="btn-primary green-btn" id="btn-show-partners" type="button">Tümünü Gör</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="wizard" class="wizard-section">
+            <div class="container max-w-lg">
+                <div class="section-header text-center">
+                    <div class="badge-tech"><i data-lucide="clipboard-check" class="badge-icon"></i> DİJİTAL BAŞVURU SİSTEMİ</div>
+                    <h2 class="section-title">Kolay <span class="text-highlight">Başvuru Sihirbazı</span></h2>
+                    <p class="section-desc">InnoPark portalına resmi başvuru yapmadan önce profilinizi seçin ve muafiyet haklarınızı anında görüntüleyin.</p>
+                </div>
+                <div class="wizard-container">
+                    <div class="wizard-progress-steps">
+                        <div class="step-progress-line"><div class="step-progress-fill" id="wizard-progress-fill" style="width: 0%;"></div></div>
+                        <div class="step-node active" data-step="1"><span class="node-num">1</span><span class="node-text">Profil</span></div>
+                        <div class="step-node" data-step="2"><span class="node-num">2</span><span class="node-text">Proje Detayları</span></div>
+                        <div class="step-node" data-step="3"><span class="node-num">3</span><span class="node-text">Özet & Teşvikler</span></div>
+                    </div>
+                    <div class="wizard-card">
+                        <div class="wizard-step active" id="wizard-step-1">
+                            <h3 class="wizard-step-title">Başvuru Yapacak Profil Türünü Seçin</h3>
+                            <p class="wizard-step-desc">Girişiminize en uygun profili seçerek hangi destek ve vergi avantajalarından faydalanabileceğinizi öğrenin.</p>
+                            <div class="profile-cards-grid">
+                                <div class="profile-option-card active" data-profile="girisimci"><div class="option-icon"><i data-lucide="user-check"></i></div><h4>Girişimci / Startup</h4><p>Yeni bir yenilikçi iş fikrim var, şirketleşerek büyümek istiyorum.</p></div>
+                                <div class="profile-option-card" data-profile="akademisyen"><div class="option-icon"><i data-lucide="graduation-cap"></i></div><h4>Akademisyen</h4><p>Bilimsel araştırmamı/patentimi ticarileştirip spin-off kurmak istiyorum.</p></div>
+                                <div class="profile-option-card" data-profile="firma"><div class="option-icon"><i data-lucide="building"></i></div><h4>Mevcut Ar-Ge Firması</h4><p>Mevcut şirketimin Ar-Ge ekibini teknoparka taşımak ve büyütmek istiyorum.</p></div>
+                            </div>
+                            <div class="wizard-footer"><div></div><button class="btn-primary" id="wizard-next-1" type="button">İlerle <i data-lucide="arrow-right"></i></button></div>
+                        </div>
+                        <div class="wizard-step" id="wizard-step-2">
+                            <h3 class="wizard-step-title">Projenizin Detaylarını Girin</h3>
+                            <p class="wizard-step-desc">Ar-Ge ve inovasyon odaklı projenizin temel başlıklarını girerek ön değerlendirmeyi başlatın.</p>
+                            <div class="form-group-wrapper">
+                                <div class="form-group"><label for="project-title">Proje Adı</label><input type="text" id="project-title" placeholder="Örn: Akıllı Tarım İzleme Sistemi" required></div>
+                                <div class="form-group"><label for="project-sector">Sektör</label>
+                                    <select id="project-sector">
+                                        <option value="yazilim">Yazılım & Bilişim Teknolojileri</option>
+                                        <option value="savunma">Savunma Sanayii & Aviyonik</option>
+                                        <option value="biyoteknoloji">Biyoteknoloji & Sağlık</option>
+                                        <option value="enerji">Yenilenebilir Enerji & Çevre</option>
+                                        <option value="makine">İleri Mekatronik & Otomasyon</option>
+                                    </select>
+                                </div>
+                                <div class="form-group"><label for="project-desc">Kısa Proje Özeti (Ar-Ge Niteliği)</label><textarea id="project-desc" rows="4" placeholder="Projenizin teknolojik yenilik getiren yönlerini, çözdüğü problemi ve hedef kitlesini kısaca özetleyin..."></textarea></div>
+                            </div>
+                            <div class="wizard-footer"><button class="btn-secondary" id="wizard-prev-2" type="button"><i data-lucide="arrow-left"></i> Geri</button><button class="btn-primary" id="wizard-next-2" type="button">Teşvikleri Hesapla <i data-lucide="arrow-right"></i></button></div>
+                        </div>
+                        <div class="wizard-step" id="wizard-step-3">
+                            <h3 class="wizard-step-title">Tebrikler! Ön Başvurunuz Değerlendirilebilir</h3>
+                            <p class="wizard-step-desc">Girdiğiniz bilgilere göre InnoPark Konya ekosisteminde yararlanabileceğiniz haklar ve vergi muafiyetleri aşağıda özetlenmiştir.</p>
+                            <div class="incentives-summary-box">
+                                <div class="incentive-item-row"><div class="inc-icon"><i data-lucide="percent" class="text-green"></i></div><div class="inc-text"><h4>Gelir Vergisi İstisnası</h4><p>Ar-Ge personelinin bu bölgede yaptığı çalışmaların ücretleri gelir vergisinden %100 muaftır.</p></div></div>
+                                <div class="incentive-item-row"><div class="inc-icon"><i data-lucide="badge-percent" class="text-blue"></i></div><div class="inc-text"><h4>KDV Muafiyeti</h4><p>Bölgede üretilen Ar-Ge yazılımları için KDV istisnası uygulanır.</p></div></div>
+                                <div class="incentive-item-row"><div class="inc-icon"><i data-lucide="gift" class="text-green"></i></div><div class="inc-text"><h4>Girişimci Destekleri</h4><p>Ortak atölye InnoGarage kullanımı, mentörlük ve TTO patent tescil desteği hak kazandınız.</p></div></div>
+                            </div>
+                            <div class="wizard-success-notice"><i data-lucide="check-circle-2" class="text-green"></i><p>Sihirbazı tamamladınız! Resmi başvuru sürecini resmi portal üzerinden başlatabilirsiniz.</p></div>
+                            <div class="wizard-footer"><button class="btn-secondary" id="wizard-prev-3" type="button"><i data-lucide="arrow-left"></i> Geri</button><button class="btn-primary" id="wizard-finish-btn" type="button">Resmi Portala Git (innopark.online) <i data-lucide="external-link"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="events-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Etkinlikler</h2>
+                    <p class="section-desc">Teknoloji ekosistemimizden en yeni duyurular ve programlar.</p>
+                </div>
+                
+                <div class="events-poster-grid" id="events-grid-el">
+                    <a href="#events" class="event-poster-card event-modal-trigger" data-event="evt1">
+                        <img src="resimler/etk1.jpg" alt="Etkinlik 1" onerror="this.src='https://images.unsplash.com/photo-1540553016722-983e48a2cd10?auto=format&fit=crop&w=600';">
+                    </a>
+                    <a href="#events" class="event-poster-card event-modal-trigger" data-event="evt2">
+                        <img src="resimler/etk2.jpg" alt="Etkinlik 2" onerror="this.src='https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600';">
+                    </a>
+                    <a href="#events" class="event-poster-card event-modal-trigger" data-event="evt3">
+                        <img src="resimler/etk3.jpg" alt="Etkinlik 3" onerror="this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600';">
+                    </a>
+
+                    <a href="#events" class="event-poster-card event-modal-trigger hidden-item" data-event="evt4">
+                        <img src="resimler/etk4.jpg" alt="Etkinlik 4" onerror="this.src='https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=600';">
+                    </a>
+                    <a href="#events" class="event-poster-card event-modal-trigger hidden-item" data-event="evt5">
+                        <img src="resimler/etk5.jpg" alt="Etkinlik 5" onerror="this.src='https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600';">
+                    </a>
+                    <a href="#events" class="event-poster-card event-modal-trigger hidden-item" data-event="evt6">
+                        <img src="resimler/etk6.jpg" alt="Etkinlik 6" onerror="this.src='https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=600';">
+                    </a>
+                </div>
+
+                <div class="text-center margin-top-md" style="margin-top: 40px;">
+                    <button class="btn-primary green-btn" id="btn-show-events" type="button">Tümünü Gör</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container grid-2 align-start">
+                <div class="faq-wrapper">
+                    <div class="badge-tech"><i data-lucide="help-circle" class="badge-icon"></i> MERAK EDİLENLER</div>
+                    <h2 class="faq-main-title">Sıkça Sorulan <span class="text-highlight">Sorular</span></h2>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-header" type="button"><span>InnoPark Konya'da kimler yer alabilir?</span><i data-lucide="chevron-down" class="acc-icon"></i></button>
+                            <div class="accordion-body"><p>Ar-Ge, yazılım geliştirme, tasarım, prototip üretimi ve yüksek teknoloji odaklı proje yürüten her türlü şahıs şirketi veya limited/anonim şirketler InnoPark'ta yer alabilir. Ayrıca henüz şirketi olmayan genç girişimciler kuluçka merkezimizden faydalanabilir.</p></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" type="button"><span>Teknoparkta yer almanın vergi avantajları nelerdir?</span><i data-lucide="chevron-down" class="acc-icon"></i></button>
+                            <div class="accordion-body"><p>Bölgede faaliyet gösteren firmalar; Ar-Ge personeli ücretlerinde gelir vergisi muafiyeti (%100), Ar-Ge faaliyetlerinden elde edilen kazançlarda kurumlar/gelir vergisi istisnası (%100) ve Ar-Ge yazılımları satışında KDV istisnasından faydalanırlar.</p></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" type="button"><span>Akademisyenler şirket kurabilir mi?</span><i data-lucide="chevron-down" class="acc-icon"></i></button>
+                            <div class="accordion-body"><p>Evet, 4691 sayılı Kanun kapsamında akademisyenler, çalıştıkları üniversitenin yönetim kurulu izniyle InnoPark bünyesinde şirket kurabilir, kurulmuş şirketlere ortak olabilir veya bu şirketlerde danışmanlık/yöneticilik yapabilirler.</p></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header" type="button"><span>Başvuru süreci nasıl işlemektedir?</span><i data-lucide="chevron-down" class="acc-icon"></i></button>
+                            <div class="accordion-body"><p>Başvurular tamamen dijital olarak innopark.online portalı üzerinden yapılır. Gönderilen Ar-Ge projesi bağımsız hakemler (akademisyen ve sektör uzmanları) tarafından incelenir. Ön onay alan projeler yönetim kurulu onayının ardından sözleşmeye davet edilir.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card-form" id="contact-panel">
+                    <h3 class="contact-form-title">İletişime Geçin</h3>
+                    <p class="contact-form-desc">Sorularınız, ofis ziyaret talepleriniz veya iş birliği önerileriniz için formumuzu doldurun.</p>
+                    <form id="contact-form-el">
+                        <div class="form-row-2">
+                            <div class="form-group"><label for="c-name">Adınız Soyadınız</label><input type="text" id="c-name" placeholder="Örn: Ahmet Yılmaz" required></div>
+                            <div class="form-group"><label for="c-email">E-posta Adresiniz</label><input type="email" id="c-email" placeholder="ahmet@sirket.com" required></div>
+                        </div>
+                        <div class="form-group"><label for="c-subject">Konu</label><input type="text" id="c-subject" placeholder="Ofis Kiralama, TTO Projesi vb." required></div>
+                        <div class="form-group"><label for="c-message">Mesajınız</label><textarea id="c-message" rows="4" placeholder="Mesajınızı buraya yazın..." required></textarea></div>
+                        <button type="submit" class="btn-primary w-full justify-center">Mesajı Gönder <i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <div class="logo-wrapper-light">
+                    <svg class="logo-svg" viewBox="0 0 240 70" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 46px; width: auto;">
+                        <text x="0" y="38" font-family="'Outfit', 'Segoe UI', 'Arial', sans-serif" font-size="40" letter-spacing="-1px">
+                            <tspan fill="#24B314" font-weight="400">Inno</tspan><tspan fill="#0B2B5C" font-weight="700">Park</tspan>
+                        </text>
+                        <text x="2" y="60" font-family="'Segoe UI', 'Arial', sans-serif" font-weight="600" font-size="11.5" fill="#0B2B5C" letter-spacing="0.2px">Konya Teknoloji Geliştirme Bölgesi</text>
+                    </svg>
+                </div>
+                <p class="footer-brand-text">Konya Sanayi Odası öncülüğünde, üniversitelerin ve sanayinin gücünü birleştiren inovasyon ve teknoloji üssü.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Hızlı Erişim</h4>
+                <ul>
+                    <li><a href="#hero">Ana Sayfa</a></li>
+                    <li><a href="#stats">Sayılarla InnoPark</a></li>
+                    <li><a href="#brands">Destek programları</a></li>
+                    <li><a href="#team">Ekibimiz</a></li>
+                    <li><a href="#firms">Şirketler Dizinimiz</a></li>
+                    <li><a href="#wizard">Ön Başvuru Yap</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links-col">
+                <h4>Kurumsal Portal</h4>
+                <ul>
+                    <li><a href="https://innopark.online" target="_blank">innopark.online Giriş</a></li>
+                    <li><a href="#contact">Kurumsal İletişim</a></li>
+                    <li><a href="#">Kalite Politikaları</a></li>
+                    <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact-col">
+                <h4>İletişim Bilgileri</h4>
+                <p class="contact-detail"><i data-lucide="map-pin"></i> Büyükkayacık Mah. 101. Cd. No:2, 42250 Selçuklu/Konya</p>
+                <p class="contact-detail"><i data-lucide="phone"></i> +90 (332) 999 14 88</p>
+                <p class="contact-detail"><i data-lucide="mail"></i> bilgi@innopark.com.tr</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 InnoPark Konya Teknoloji Geliştirme Bölgesi. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" id="firm-modal">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Kapat" type="button"><i data-lucide="x"></i></button>
+            <div class="modal-body-content"></div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="event-modal">
+        <div class="modal-card event-modal-card light-modal">
+            <button class="modal-close event-modal-close" aria-label="Kapat" type="button"><i data-lucide="x"></i></button>
+        <div class="modal-body-content" id="event-modal-content"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

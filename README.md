@@ -8,32 +8,32 @@ Innopark Konya için özel olarak kodlanan bu yeni web sitesi; modern, hızlı v
 ## Ekran Görüntüleri
 
 Ana sayfa ve genel görünüm:
-![Ana Sayfa](ss/ekran1.png)
+![Ana Sayfa](screenshots/ekran1.png)
 
 <details>
   <summary><b>Tüm Ekran Görüntülerini Görmek İçin Tıklayın (20 Görsel)</b></summary>
   
   <br>
   
-  ![Görsel 2](ss/ekran2.png)
-  ![Görsel 3](ss/ekran3.png)
-  ![Görsel 5](ss/ekran4.png)
-  ![Görsel 6](ss/ekran5.png)
-  ![Görsel 7](ss/ekran6.png)
-  ![Görsel 8](ss/ekran7.png)
-  ![Görsel 9](ss/ekran8.png)
-  ![Görsel 10](ss/ekran9.png)
-  ![Görsel 11](ss/ekran10.png)
-  ![Görsel 12](ss/ekran11.png)
-  ![Görsel 13](ss/ekran12.png)
-  ![Görsel 14](ss/ekran13.png)
-  ![Görsel 15](ss/ekran14.png)
-  ![Görsel 16](ss/ekran15.png)
-  ![Görsel 17](ss/ekran16.png)
-  ![Görsel 18](ss/ekran17.png)
-  ![Görsel 19](ss/ekran18.png)
-  ![Görsel 20](ss/ekran19.png)
-  ![Görsel 21](ss/ekran20.png)
+  ![Görsel 2](screenshots/ekran2.png)
+  ![Görsel 3](screenshots/ekran3.png)
+  ![Görsel 5](screenshots/ekran4.png)
+  ![Görsel 6](screenshots/ekran5.png)
+  ![Görsel 7](screenshots/ekran6.png)
+  ![Görsel 8](screenshots/ekran7.png)
+  ![Görsel 9](screenshots/ekran8.png)
+  ![Görsel 10](screenshots/ekran9.png)
+  ![Görsel 11](screenshots/ekran10.png)
+  ![Görsel 12](screenshots/ekran11.png)
+  ![Görsel 13](screenshots/ekran12.png)
+  ![Görsel 14](screenshots/ekran13.png)
+  ![Görsel 15](screenshots/ekran14.png)
+  ![Görsel 16](screenshots/ekran15.png)
+  ![Görsel 17](screenshots/ekran16.png)
+  ![Görsel 18](screenshots/ekran17.png)
+  ![Görsel 19](screenshots/ekran18.png)
+  ![Görsel 20](screenshots/ekran19.png)
+  ![Görsel 21](screenshots/ekran20.png)
   
 </details>
 

@@ -5,7 +5,13 @@ Bu web projesinin tüm arayüz tasarımı ve kodlaması tamamen **Aleyna Kardele
 ## Proje Hakkında
 Innopark Konya için özel olarak kodlanan bu yeni web sitesi; modern, hızlı ve kullanıcı dostu bir yapı sunmaktadır.
 
+## Öne Çıkan Özellikler
+**Karanlık Mod (Dark Mode) Desteği:** Kullanıcı deneyimini artırmak için siteye tam uyumlu karanlık/aydınlık mod seçeneği entegre edilmiştir.
+**Tamamen özel (sıfırdan) kodlanmış arayüz.**
+
 ## Ekran Görüntüleri
+
+**Not:** Aşağıdaki ekran görüntüleri sitenin **Aydınlık Mod (Light Mode)** versiyonuna aittir. Arayüzün tamamı karanlık moda da uyumludur.)
 
 Ana sayfa ve genel görünüm:
 ![Ana Sayfa](screenshots/ekran1.png)
